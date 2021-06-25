@@ -41,7 +41,7 @@
           },
 
 ## DELETE a movie
-- [ ]  be able to delete a movie record from the database, so that it is no longer an entry in the list of movies.
+- [X]  be able to delete a movie record from the database, so that it is no longer an entry in the list of movies.
 
     ## GET URL
           /movies/{movieId} DELETE
