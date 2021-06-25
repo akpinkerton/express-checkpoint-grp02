@@ -5,6 +5,8 @@ var fs = require('fs');
 const { moveCursor } = require('readline');
 
 /* GET users listing. */
+// set both the query and the value youre searching against to lowercase to negate case sensitivity
+// use .includes() to be able to search for shorter  titles
 router.get('/', function (req, res, next) {
   // console.log(req.query.title)
   if (!req.query.title) { res.json(movies).end() }
