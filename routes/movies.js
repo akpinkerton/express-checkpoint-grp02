@@ -31,6 +31,7 @@ router.get('/:id', function (req, res, next) {
 });
 
 // Create a movie object for the body, nav to localhost:3000/movies and POST to add object
+// on POST typically wanna return a 201 status code 
 router.post('/', (req, res) => {
   req.body['id'] = movies.length + 1
   // console.log(req.body)
